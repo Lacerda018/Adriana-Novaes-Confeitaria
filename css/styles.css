@@ -1,0 +1,142 @@
+body{
+    background: #693F26;
+    width: 100%;
+}
+
+/*header*/
+
+header{
+    box-shadow: 0px 5px 4px #241208;
+}
+.cabecalho{
+    background: #4F2811;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.cabecalho-imagem{
+    width: 200px;
+    margin: 10px;
+}
+
+.cabecalho-titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-size: 48px;
+    color: white;
+}
+/*main*/
+main{
+    font-family: 'Gilda Display', serif;
+    width: 90%; /* width == largura*/
+    font-size: 20px;
+    color: white;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-perfil{
+    width: 500px;
+    margin: 10px;
+}
+
+.nome{
+    font-weight: 400;
+    font-size: 36px;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.botao-instagram{
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px
+}
+
+.botao-instagram:hover{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: white;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+
+.botao-whatsapp{
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1rem;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px
+}
+
+.botao-whatsapp:hover{
+    background: #00b327;
+    color: white;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+
+.paragrafo-marketing{
+    margin: 25px;
+}
+/*section*/
+
+article{
+    border-bottom: 2px solid #4F2811 ;
+    margin-top: 250px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define duas colunas com tamanhos iguais*/
+    grid-template-rows:repeat(auto-fit, minmax(50px, 1fr));
+    /* grid-gap:25px; Define o espaçamento entre as células do grid */
+    align-items: center;
+    
+}
+  
+.item {
+    padding:100px;
+}
+
+.doce-imagem{
+    width: 444px;
+    height: 437px;
+    border-radius: 10px;
+}
+
+.item:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+    font-family: 'Lobster', cursive;
+    color: white;
+    margin: 30px;
+    border-top: 2px solid #4F2811;
+    height: 30px;
+}
